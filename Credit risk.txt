@@ -1,0 +1,13 @@
+The purpose of this analysis is to predict whether or not a loan is healthy (low risk of defaulting) or high-risk (high risk of defaulting), based on an individual's loan size, interest rate, borrower income, debt-to-income ratio, number of accounts, derogatory marks, and total debt. The logistic regression categorizes between the two types of loans. This analysis runs the logistic regression twice, on the original and oversampled data. Oversampling the data helps to even out the sample sizes, since more people have healthy loans than unhealthy. 
+
+Results of the model with original data:
+- 94% balanced accuracy
+- 80 healthy and 67 high-risk loans misclassified
+- Healthy loans: 100% precision; high-risk loans: 87% precision
+
+Results of the model with oversampled data:
+- 100% balanced accuracy
+- 91 healthy and 2 high-risk loans misclassified
+- Healthy loans: 100% precision; high-risk loans: 87% precision
+
+I would recommend the company use the model with oversampled data to predict loan defaults. It is extremely accurate (very few misclassifications) and precise. Furthermore, being able to predict loan outcomes is very important for a company. If a loan defaults, the company can lose a lot of money. So these models (especially the oversampled one) can help prevent the company from issuing risky loans.
